@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>어나더에덴 캐릭터 시스템 | v4.0 최종본</title>
+    <title>어나더에덴 캐릭터 시스템 | v4.1 최종본</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
@@ -68,7 +68,7 @@
             gap: 0.75rem;
         }
 
-        /* --- v4.0 Diagram --- */
+        /* --- Diagram Styles --- */
         .diagram-container-v4 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -149,8 +149,8 @@
 
     <main class="container">
         <header>
-            <h1>어나더에덴 캐릭터 시스템 v4.0</h1>
-            <p>팩트 체크 기반 최종 정보 가이드</p>
+            <h1>어나더에덴 캐릭터 시스템 v4.1</h1>
+            <p>최신 정보 기반 최종 정리본</p>
         </header>
 
         <section class="section-card">
@@ -167,13 +167,13 @@
                 </div>
 
                 <div class="diagram-box path-evolution">
-                    <h3>2. 일반 진화</h3>
+                    <h3>2. 일반 진화 (승급)</h3>
                     <div class="card-wrapper">
                         <div class="diagram-card" style="border-color: var(--ns-color);">
                             <div class="card-title">NS 4.5★</div>
                         </div>
                         <div class="arrow">↓</div>
-                        <div class="materials-label">전용 기억의 서</div>
+                        <div class="materials-label">전용 서 + 몽영의 서 5권</div>
                         <div class="arrow">↓</div>
                         <div class="diagram-card" style="border-color: var(--ns-color);">
                             <div class="card-title">NS 5★</div>
@@ -199,7 +199,7 @@
                 </div>
 
                 <div class="diagram-box path-special">
-                     <h3>4. 특별 관계</h3>
+                     <h3>4. 특별 관계 (이시층)</h3>
                     <div class="card-wrapper">
                          <div class="diagram-card" style="border-color: var(--ac-color);">
                             <div class="card-title">이시층 캐릭터 (AC)</div>
@@ -217,58 +217,96 @@
         </section>
 
         <section class="section-card">
-            <h2 class="section-title">1️⃣ 클래스 체인지 경로 정리</h2>
+            <h2 class="section-title">1️⃣ 스타일 개념 및 특징</h2>
             <div class="table-responsive">
                 <table class="styled-table">
-                    <thead><tr><th>변화 경로</th><th>요구 재료</th><th>수량</th><th>핵심 조건</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>스타일</th>
+                            <th>핵심 개념</th>
+                            <th>무기/속성</th>
+                            <th>천/명 공유</th>
+                            <th>주요 특징</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td>NS 4.5★ → <strong class="highlight hl-ns">NS 5★</strong></td><td>전용 기억의 서</td><td>다수</td><td>일반적인 5성으로의 '진화'</td></tr>
-                        <tr><td>NS 보유 → <strong class="highlight hl-as">AS</strong></td><td>이절 + 몽영의 서</td><td>각 5권</td><td>다른 스타일로 '개방'</td></tr>
-                        <tr><td>NS 보유 → <strong class="highlight hl-es">ES</strong></td><td>개전 + 몽영의 서</td><td>각 5권</td><td>다른 스타일로 '개방'</td></tr>
-                        <tr><td>NS 보유 → <strong class="highlight hl-ac">AC</strong></td><td>경전록 + 몽영의 서</td><td>3권, 5권</td><td>다른 스타일로 '개방'</td></tr>
-                        <tr><td>AC ↔ <strong class="highlight hl-ns">NS 5★</strong></td><td>경전록</td><td>3권</td><td>특별 관계, 상호 전환 가능</td></tr>
+                        <tr>
+                            <td><strong class="highlight hl-ns">NS</strong></td>
+                            <td>캐릭터의 기본 폼</td>
+                            <td>기준</td>
+                            <td rowspan="3" style="vertical-align: middle; text-align: center; font-size:1.5rem;">✔</td>
+                            <td>모든 스타일의 기본</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="highlight hl-as">AS</strong></td>
+                            <td>외형, 5성 보드 변경</td>
+                            <td>NS와 동일</td>
+                            <td>4성 보드 공유, 역할군 특화</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="highlight hl-es">ES</strong></td>
+                            <td>무기/속성까지 변경</td>
+                            <td>자주 변경됨</td>
+                            <td>완전 독립 보드, EX 필살기 보유</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="highlight hl-ac">AC</strong></td>
+                            <td>평행세계의 다른 인물</td>
+                            <td>자주 변경됨</td>
+                            <td style="text-align: center; font-size:1.2rem;">✖</td>
+                            <td><strong>별개 캐릭터 취급, 동시 편성 가능</strong></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
-        
-        <section class="section-card">
-            <h2 class="section-title">2️⃣ 각 스타일 특징 비교</h2>
-            <div class="table-responsive">
-                <table class="styled-table">
-                    <thead><tr><th>스타일</th><th>보드 공유</th><th>무기/속성</th><th>동시 편성</th><th>핵심 특징</th></tr></thead>
-                    <tbody>
-                        <tr><td><strong class="highlight hl-ns">노멀 (NS)</strong></td><td>-</td><td>기본</td><td>-</td><td>캐릭터의 기본 형태</td></tr>
-                        <tr><td><strong class="highlight hl-as">어나더 (AS)</strong></td><td>4성까지 공유</td><td>동일</td><td>불가</td><td>역할군 특화, NS와 스탯 보너스 공유</td></tr>
-                        <tr><td><strong class="highlight hl-es">엑스트라 (ES)</strong></td><td>완전 독립</td><td>완전 변경</td><td>불가</td><td>고유의 EX 필살기, 완전 별개 성장</td></tr>
-                        <tr><td><strong class="highlight hl-ac">이시층 (AC)</strong></td><td>완전 독립</td><td>일부 변경</td><td><strong>가능</strong></td><td>완전 별개의 캐릭터, 성우/천명 분리</td></tr>
-                    </tbody>
-                </table>
+             <div class="card-subtitle" style="text-align: right; margin-top: 1rem;">
+                * <strong>공통 특징:</strong> NS/AS/ES 간 레벨은 별도지만 경험치 보너스가 있으며, 어빌리티 포인트(AP)는 일부 공유됩니다.
             </div>
         </section>
 
         <section class="section-card">
-            <h2 class="section-title">3️⃣ 클래스 체인지 재료 정리</h2>
+            <h2 class="section-title">2️⃣ 전직(클래스 체인지) 요건</h2>
             <div class="table-responsive">
                 <table class="styled-table">
-                    <thead><tr><th>재료 명칭</th><th>스타일 용도</th><th>필요 수량</th><th>주요 획득처</th></tr></thead>
+                    <thead><tr><th>목표</th><th>필요 재료</th><th>핵심 설명</th></tr></thead>
                     <tbody>
-                        <tr><td>🌀 속삭임/기원의 서</td><td>NS 진화 (2~5성)</td><td>다수</td><td>어나더 던전 (모든 난이도)</td></tr>
-                        <tr><td>📘 몽영의 서</td><td><strong>AS/ES/AC 공통</strong></td><td><strong>5권</strong></td><td>어나더 던전 (베리 하드), 그린키2개 던전, 환리경 등</td></tr>
-                        <tr><td>📗 이절</td><td>AS 전용</td><td>5권</td><td>어나더 던전 (베리 하드), 그린키2개 던전류, 환리경</td></tr>
-                        <tr><td>📙 개전</td><td>ES 전용</td><td>5권</td><td>어나더 던전 (베리 하드), 그린키2개 던전류, 환리경</td></tr>
-                        <tr><td>📕 경전록</td><td>AC 전용</td><td>3권</td><td>레드키 어나더 던전 (구매 불가), 환리경</td></tr>
+                        <tr>
+                            <td><strong class="highlight hl-ns">NS 5성으로 승급</strong></td>
+                            <td><strong>몽영의 서 5권</strong> + 해당 캐릭터의 <strong>5성 전용 서</strong></td>
+                            <td>4.5성 캐릭터를 5성으로 '진화'</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="highlight hl-as">AS 스타일 개방</strong></td>
+                            <td><strong>몽영의 서 5권</strong> + 해당 캐릭터의 <strong>이절 5권</strong></td>
+                            <td rowspan="3">NS 보유 시 다른 스타일을 '개방'</td>
+                        </tr>
+                        <tr>
+                           <td><strong class="highlight hl-es">ES 스타일 개방</strong></td>
+                            <td><strong>몽영의 서 5권</strong> + 해당 캐릭터의 <strong>개전 5권</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="highlight hl-ac">AC로 상호 전환</strong></td>
+                            <td><strong>몽영의 서 5권</strong> + 해당 캐릭터의 <strong>경전록 3권</strong></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </section>
         
         <section class="section-card">
+            <h2 class="section-title">3️⃣ 스타일 출시 순서 및 여부</h2>
+            <div class="summary-list">
+                <li><span class="icon">➡️</span><div><strong>기본 출시 순서:</strong> 일반적으로 <strong>NS → AS → ES</strong> 순서로 스타일이 추가됩니다.</div></li>
+                <li><span class="icon">❔</span><div><strong>개별 차이:</strong> 모든 캐릭터가 AS나 ES를 갖는 것은 아니며, 캐릭터마다 출시된 스타일의 종류가 다릅니다.</div></li>
+            </ul>
+        </section>
+
+        <section class="section-card">
             <h2 class="section-title">📌 최종 요약</h2>
             <ul class="summary-list">
-                <li><span class="icon">🔑</span><div><strong>핵심 전제 조건:</strong> 새로운 스타일(AS, ES, AC)을 개방하려면, 해당 캐릭터의 **노멀 스타일(NS)을 4성이든 5성이든 보유**하고 있어야 합니다.</div></li>
-                <li><span class="icon">🔄</span><div><strong>특별한 상호 관계:</strong> **NS 5성**과 **이시층(AC)**은 '경전록' 3권을 사용하여 서로를 획득할 수 있는 유일한 관계입니다. (단, AC에서 NS를 얻으려면 AC만 보유한 상태여야 합니다.)</div></li>
-                <li><span class="icon">💡</span><div><strong>독립성과 동시 편성:</strong> 이시층(AC) 캐릭터는 원본과 완전 별개의 캐릭터로 취급되어 **한 파티에 원본 캐릭터와 동시 편성이 가능**합니다.</div></li>
+                <li><span class="icon">🔑</span><div><strong>하나의 캐릭터 (NS, AS, ES):</strong> 세 스타일은 **천명치를 공유**하며, 외형과 스킬셋만 다른 '같은 캐릭터'로 취급됩니다. 동시 편성은 불가능합니다.</div></li>
+                <li><span class="icon">✨</span><div><strong>별개의 캐릭터 (AC):</strong> 이시층 캐릭터는 원본과 **천명치를 공유하지 않으며**, 완전히 다른 캐릭터로 취급되어 **동시 편성이 가능**합니다.</div></li>
+                <li><span class="icon">🔄</span><div><strong>특별한 상호 관계:</strong> '별개의 캐릭터'임에도 불구하고, **NS 5성**과 **AC**는 '경전록'을 통해 서로를 획득할 수 있는 유일한 관계입니다.</div></li>
             </ul>
         </section>
     </main>
